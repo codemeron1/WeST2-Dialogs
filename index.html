@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome!!!</h1>
+
+  <button onclick="showMessage()">Click Me</button>
+  <button onclick="showPrompt()">Prompt Dialog Sample</button>
+  <button onclick="deleteConfirmation()">Delete</button>
+
+  <button onclick="document.getElementById('dialogPrivacyPolicy').showModal()">Privacy Policy</button>
+  <button onclick="document.getElementById('dialogRegistration').showModal()">Registration</button>
+
+  <button onclick="sweet()">SweetAlert Checking</button>
+
+  <dialog id="dialogPrivacyPolicy">
+    <h1>Dialog Title</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio deserunt velit quae exercitationem adipisci error sequi aspernatur natus, molestias delectus nesciunt tempore, sit dicta impedit totam id quas animi provident?
+    </p>
+    <button onclick="document.getElementById('dialogPrivacyPolicy').close()">Close</button>
+  </dialog>
+
+  <dialog id="dialogRegistration">
+    <form id="formRegistration">
+      <label for="txtFullName">Full Name</label>
+      <input type="text" name="fullName" id="txtFullName" required> 
+      <br>
+
+      <label for="txtUserName">Username</label>
+      <input type="text" name="username" id="txtUserName" required> 
+      <br>
+
+      <label for="txtPassword">Password</label>
+      <input type="text" name="password" id="txtPassword" required> 
+      <br>
+
+      <label for="txtConfirmPassword">Confirm Password</label>
+      <input type="text" name="confirmPassword" id="txtConfirmPassword" required>
+      <br>
+
+      <button type="button" onclick="document.getElementById('dialogRegistration').close()">Cancel</button>
+      <button type="submit" onclick="submitRegistration(event)">Submit Registration</button>
+    </form>
+  </dialog>
+
+
+  <script src="sweetalert2.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
