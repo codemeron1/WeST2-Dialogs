@@ -1,4 +1,5 @@
 # Dialog Implementation
-> Built-in Dialogs
-> HTML Modal
-> SweetAlert2.js Library
+_________________________
+1. Built-in Dialogs
+2. HTML Modal
+3. SweetAlert2.js Library
